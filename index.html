@@ -1,2 +1,617 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta content="yes" name="apple-mobile-web-app-capable"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><meta name="keywords" content="在线客服,工单系统"><link rel="icon" href="https://www.chat5188.com/favicon.ico"><title>下载中心 | 小美客服系统</title><script src="static/js/index.min.js"></script><script defer="defer" src="static/js/chunk-vendors.3db00198.js"></script><script defer="defer" src="static/js/app.96636e11.js"></script><link href="static/css/chunk-vendors.95973ec2.css" rel="stylesheet"><link href="static/css/app.8244095b.css" rel="stylesheet"><meta data-vue-meta-info="true" name="keyWords" content="下载中心 客服系统 关键字"><meta data-vue-meta-info="true" name="description" content="小美客服系统的下载中心，描述"></head><body><noscript><strong>We're sorry but demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app" data-v-app=""><div><div data-v-751e02a8="" class="contain"><div data-v-751e02a8="" class="up"><div data-v-72e14315="" data-v-751e02a8="" class="up"><a data-v-72e14315="" href="javascript:_MKEFU.openMessageDialog(true);" class="el-tooltip__trigger"><div data-v-72e14315="" class="box pointer"><img data-v-72e14315="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAADvUlEQVRYR+2Xe8iecxjHP1/nQ5GV2khyiDS0mrQ/9s9MjiE5LcdMbcbQiHJI01ByzpiQYzmOEUlttBZpS06NbI5hhcgppxy++r79nrl3v8/73M9zv6OlXf889fS7r+vzu84/sYGJNjAe/h9AtncGTgAOAvYFxgKbAd8DHwCvAs8AyyR5kCgM5CHbuwLXACcVgG+BN4A1wO/AGGAfYC8Y8v67wFxJT/QL1TeQ7RnAzcCWwGPAncArkv6qGysePAU4H4g3nwPOlPR1E1hfQLZvAuYAbxbF+W0U29sAVwEXAh8Ch0j6pNeHjUC25wFXAE8Cp0r6tZGkdsD2scDDwOfAJEnfjKSjJ5DtI4FngReAoyX9MShM53yBWhhdkqK3q4wIZHtrYFVJzv0kfdcWpgJ1HXAJME1S8nCY9AK6ALgFOFnSI6OFyfflkquBn1KN3VpCL6CU7BYp4W6V1BbQ9kXADcBUSS/V9XQFsr038B4wT9KVbY13+872uJLc8yUlCuvISEBnAPcDUyQtXZ9AJXQrgZ8lHdgv0NXA5RkJkr78F4DSuQ+WtEMjkO20/VTABCCVtQS4TNL7owGznVl3MTAd2A3YBDhL0n1VveuErMBkMG4LPF8OHlGqIg2tNZTtR8sMTJd/G5gM7J5OLmluB6oO9BQQgMmSXivxngi8HEBJx7Xxku1sBS8CCySdU/RmJqbpTgH2kPRp/q8D/QAsrhu2nQ6bObRdS6BrgUuBcZK+qDTKDujpkh7qBpTd5S5JM6uGbS8Azk7cB91vijduB+KZzavjx/b+wFvAbEk5M8xDG4GaPPQLsFDSabWQPQicKGmrljl0Y9mJtpeUPB0S25PKuju9U/71pF5WVtDxkr4qH+0IvAOslpRSHVhsTwMyoM+TNL8CdAcwC8g2ke49LIdSgouBlGASOZJkzi59qKSU7sBSmuKKGAbuKWGaChyfJiwpwEMybJbZPga4DdilnPksu7Gkpwcm+Sc0WWWzcR6WSBW7eRQEbo6k30YEKmFKW8/Ej6zqtX7YPgAYD2xajMW7SyX9WXRlBKXH5LmUF8utwE7AR5J+rF+ycafu5RXbyYdzu5xJLmYzTLhTICmW9JoHmrzcGsh2VoflwCIgVZR9O/qOyjAuhvNEejxduum10TNkTbcoocjN0w6yRqxNdtsZzAlFvJS32Mf96FsfQMmxtIPXgbsrHjq8VM/a+fSfABUvzQauB6oNM1V0LzCjzS7eOoc6t7adrW/PSpWtkZQHYSsZNVArqz0+2gjU5NG/AYiOhDRmJIhSAAAAAElFTkSuQmCC"><p data-v-72e14315="" class="popover-text">在线咨询</p></div></a><div data-v-72e14315="" class="box el-tooltip__trigger el-tooltip__trigger"><img data-v-72e14315="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAD9ElEQVRYR+2XV6gdVRiFv2VDwYI1olEwxK5gjBIL0QgBE9Q8RH1QUYKgqBADKhYSH+wNjCj4olGsBAMxvhhsSERQ7P1BTSxobGDFXpas675hzuTMnTmXi0a4P1wuZ+bM3mvWv9b69xEbWGkDw8M4oLaO/D8Zsj0NOBE4EtgT2Bb4A/gceAt4Clgm6dM2Btruj8iQ7enATUAAGXgPeBv4GtgE2B2YCmwN/A48AFwmKUBHVX0B2c71a4GLge+BW4G7JH1U38X2RsAM4NzC4g/AWZIeGg2iJkBLgDOBx/Jf0toui9s+orAU5uZLur3Lc9XvrAfI9gLgFuA+YJ6kvwoLOzW1wvb2wLeS/rS9A/A0sC8wS9KTg4DqAWR7AvB++Zsm6Tfb0cpzwCFpo6SF1Q1sB/z5wCpJx+Se7d2A14FvAizrdAVVB7QIuAqYKSnOyeJbAnFPhLtU0ik1QKuAo4C1knYdvmf7omKI0yQ9OFpAzwO7SIoG1pXtvcumKyR9VbuXdp0UFiW9UV5iY+AA4FXgUeDsrjqsM/RdMkXS3K5vVGFkU+BU4HQg4t6itkZYfhhYLGlN0/p1QOl12nLGIIBsTwHSln2AD4FY/oUSnNHgJCD6Srjm82JgkaSEa0/VAX0MvCtpZldAtk8oAH4BLog7+21UWrkjcHVyqjhxjqQfG21veymQDXaWlIAbsWzvB7xYknuGpNVtzxRg84A7gUckhbV1VWdoFrASWCgpSd0G6AngaOBQSbF5XBkdBeg1kn4u1zYDrsjYkXR/uTbs6LmSoq2h6heMCbKIcrqkl5sQ2Z6c9gJLJKUFQ2X7EyD2Tygm6XPtsJJlYX0bSbYdE0TcayTlpRoBZbEIMg8cJyktWa9sx033Vjcumx8M7AEsz8YVoCcDqyW9UrmWGXleMk7ST30ZKovGLY8DEWGEl9b0lO35ZejuJSmngIGrMqYmD+uv8fhR4j8WPhbIW0Xs2fjNCL5oJceNqdW3HgSV7SuBy4EJkr5sZKiwdHyx823AOWV0DN0CItbkScS6QFKoH7hsR6PRVPTYX0OV/t4DJCCTsDcAK4p79i+tjEDnANtlTAwyQMsLZ9wsAy6RdGMXQLFnZtsdkn5tEHbc+EwyRVJY7FQlv54FvgCmSEqojsxQp5X/sfSlwHXA3eVQ1pO89XVsH17YTssTLe9UvzMmvzpsX1hAfQbcnLlWPRXYzvSPc5Nby8vZarak1+qAxwRQ0UTy5/qcpcomH5Thunn5pbJVcqg4daKkA/t1YcwAVcyQyT4bOKiIP65MIidscy1H5ICcJCmx0lNjDqhNe7YnluyJWV76zwG1Af7XGRoH1MZA2/3xlrUx9DcmKIA0RITLaQAAAABJRU5ErkJggg=="><p data-v-72e14315="" class="popover-text no-pointer">关注微信</p></div><div data-v-72e14315="" class="box el-tooltip__trigger el-tooltip__trigger"><img data-v-72e14315="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAADMUlEQVRYR+2Xa4imYxjHf3+y2hwSi5wnVjtJSmppUg41X4zUlGN2Gl9sPuwXY7VLaYlVPkmRTQ7tlI2oTTlslFOobXcRikRLctyw4xAt+uuvZ+ptZt657+cZH+bDXPV+eZ/7uq7fc93X6RGLTLTIeFgCKt1IpwjZPhgYBa4GVgPHAweAz4BXgcclfVxyPtfz1kC2zwceA84EdgCvA18DhwJnAVcAg82ZCUm/tQFrBWT7SuBJ4GVgnaQv53JmO9F7GPgOGJa0rxaqGsj2EPAa8BBwiyTP58T2qcArwI/ARZL+qoGqArJ9CPARkLwYLcFMO7a9CtgFbJZ03/8JNAY8Apwh6Zsawz1QtwMTwMmS/izp1kboJeAnSdeXDM58bvvoJpeukvRcSb8WaD9ws6QnSgb7JPnOVKOkDSX9IpDtI4BfgEslJalbi+2ngL8lrSkp1wCNAAn1SklflAz2idDdwA3AgKR/5rNRA/QgcLaki7vARMd2muinwLmS3u8MZPsg4M10YknXLADoKOBnYFzS5EKAkoSbmsaWftJZbKdzXwucI+mrfob6XpntDMzPgTsk3d+ZpFG0vQx4D9gtabwL0K0ZEcAptW2/BG37OiCt4wRJucJZMl+EMof2SlpbclT73PZhabC5Oknb2wJ9C9wlaUutw5pztj8EnpZ0T1ugP4AxSc/WOKo9YzvN9V1JSYdWV5Zd5s5EyPagpE9qnc48Z/tw4MgMZtsfAM9ISrNsBbQtDbGpjEz7EUkZsq3F9ovNqvsokGLJfvRWW6CTmoo4ETgti5akgbY0tjN6nk+BAFnSJiVtbl320wrNYBwG1neZ9rZXAA80HwRZZ7OD95V5Z5nt45pd5nJJCXtnsf0C8LukfKl0BsrqkQU90cmQnSW2jwXOA7INvjHXemt7OfA2sEfSjZ2Bomj7NiA9I+WfX6otuZAcuwS4CTimcfJOvsmATPRfm/8vaM5kwA5JyjjqFqGePEpipm9cCGTh/4+1WSm2Aone6cBG4LKUeI/HH1LmwL01+3hxH+p9lWZAJjKB+l7S1MxXtR2bOZMxMSUp/axaWgFVW13AwSWgUvCWIlSK0L897yU0fas0XwAAAABJRU5ErkJggg=="><p data-v-72e14315="" class="popover-text no-pointer">QQ咨询</p></div></div></div><div data-v-751e02a8="" class="header"><div data-v-751e02a8="" class="menu"><div data-v-751e02a8=""><ul data-v-751e02a8="" role="menubar" class="el-menu el-menu--horizontal el-menu-demo" style="--el-menu-level:0;"><span data-v-751e02a8="" class="logo" tabindex="0"><img data-v-751e02a8="" src="static/picture/logo.85c97d1e.png"></span><span data-v-751e02a8="" class="profile" tabindex="0"> 小美智能云服 </span><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="0">首页</li><li data-v-751e02a8="" class="el-sub-menu" role="menuitem" ariahaspopup="true" ariaexpanded="false" tabindex="0"><div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger">产品<i class="el-icon el-sub-menu__icon-arrow" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i></div></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="0">价格</li><li data-v-751e02a8="" class="el-sub-menu" role="menuitem" ariahaspopup="true" ariaexpanded="false" tabindex="0"><div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger">服务与支持<i class="el-icon el-sub-menu__icon-arrow" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i></div></li><li data-v-751e02a8="" class="el-sub-menu is-active" role="menuitem" ariahaspopup="true" ariaexpanded="false" tabindex="0"><div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger">下载<i class="el-icon el-sub-menu__icon-arrow" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i></div></li><li data-v-751e02a8="" class="el-sub-menu" role="menuitem" ariahaspopup="true" ariaexpanded="false" tabindex="0"><div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger">关于我们<i class="el-icon el-sub-menu__icon-arrow" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path></svg></i></div></li><div data-v-751e02a8="" class="other" tabindex="0"><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><a data-v-751e02a8="" class="el-link el-link--default logn" href="https://regist.chat5188.com/" target="_blank"><span class="el-link__inner"> 登录/注册 </span></a></li></div></ul></div></div><div data-v-751e02a8="" id="noticeId1" class="notice-pc notice-content"><div data-v-751e02a8="" class="notice-body"> 在使用小美企业客服软件期间，不得危害国家安全、泄露国家秘密，不得侵犯国家社会集体和公民的合法权益，本产品禁止用于含木马、病毒、色情、赌博、诈骗等违法违规业务。小美科技公司对违反规定的可以暂停或终止其服务，并协助有关行政机关等进行追索和查处。投诉举报电话：18525479522 近期发现不法分子冒充小美官方，在telegram软件注册并建立聊天群和频道进行违法犯罪和诈骗，目前发现已知冒充官方的telegram账号有：@chat5188&nbsp;、 @chat51888&nbsp; 、@chat5188vip&nbsp;、 @xiaomeichats 以及对应的telegra群和频道。如有新发现欢迎及时举报！ </div><div data-v-751e02a8="" class="notice-close"><button data-v-751e02a8="" ariadisabled="false" type="button" class="el-button el-button--primary" onclick="getElementById('noticeId1').classList.add('hide')" style="margin-left: 20px;"><span class=""> 好的 </span></button></div></div><div data-v-751e02a8="" class="pc"><div data-v-751e02a8="" class="logo"><img data-v-751e02a8="" src="static/picture/logo.85c97d1e.png"></div><span data-v-751e02a8="" class="profile"> 小美智能云服 </span><div data-v-751e02a8="" class="pc-right"><img data-v-751e02a8="" src="data:image/png;base64,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"></div><div class="el-overlay" style="z-index: 2009; display: none;"><div aria-modal="true" aria-labelledby="el-id-9704-8" aria-describedby="el-id-9704-9" class="el-drawer ttb" role="dialog" style="height: 30%;"><span class="el-drawer__sr-focus" tabindex="-1"></span></div></div></div><div data-v-751e02a8="" id="noticeId3" class="notice-mobile notice-content"><div data-v-751e02a8="" class="notice-body"> 在使用小美企业客服软件期间，不得危害国家安全、泄露国家秘密，不得侵犯国家社会集体和公民的合法权益，本产品禁止用于含木马、病毒、色情、赌博、诈骗等违法违规业务。小美科技公司对违反规定的可以暂停或终止其服务，并协助有关行政机关等进行追索和查处。投诉举报电话：18525479522 </div><div data-v-751e02a8="" class="notice-close"><button data-v-751e02a8="" ariadisabled="false" type="button" class="el-button el-button--primary" onclick="getElementById('noticeId3').classList.add('hide')" style="margin-left: 20px;"><span class=""> 好的 </span></button></div></div></div><div data-v-751e02a8=""><div data-v-751e02a8="" class="el-row" style="margin-left: -10px; margin-right: -10px;"><div data-v-751e02a8="" class="el-col el-col-24 is-guttered" style="padding-right: 10px; padding-left: 10px;"><div data-v-751e02a8="" class="main"><div data-v-374fa2ba="" data-v-751e02a8="" class="question"><div data-v-374fa2ba="" class="top"><h1 data-v-374fa2ba="" class="question-title">下载中心</h1><div data-v-374fa2ba="" class="end"><div data-v-374fa2ba="" class="end-box"><div class="box" data-v-374fa2ba=""><img src="data:image/png;base64,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" data-v-374fa2ba=""><div class="box-title" data-v-374fa2ba="">Android端工作台</div><p class="box-text" data-v-374fa2ba="">版本号：1.0.7</p><p class="box-text" data-v-374fa2ba="">更新时间：2023-03-08</p><button data-v-374fa2ba="">点击下载</button></div><div class="box" data-v-374fa2ba=""><img src="data:image/png;base64,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" data-v-374fa2ba=""><div class="box-title" data-v-374fa2ba="">iOS端工作台</div><p class="box-text" data-v-374fa2ba="">版本号：1.0.7</p><p class="box-text" data-v-374fa2ba="">更新时间：2023-04-17</p><button data-v-374fa2ba="">点击下载</button></div><div class="box" data-v-374fa2ba=""><img src="data:image/png;base64,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" data-v-374fa2ba=""><div class="box-title" data-v-374fa2ba="">Mac系统</div><p class="box-text" data-v-374fa2ba="">版本号：1.1.8</p><p class="box-text" data-v-374fa2ba="">更新时间：2023-06-11</p><button data-v-374fa2ba="">点击下载</button></div><div data-v-374fa2ba="" class="box"><img data-v-374fa2ba="" src="data:image/png;base64,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"><div data-v-374fa2ba="" class="box-title">Windows系统</div><p data-v-374fa2ba="" class="box-text">版本号：1.1.9</p><p data-v-374fa2ba="" class="box-text">更新时间：2023-12-29</p><button data-v-374fa2ba="">点击下载</button></div></div></div></div><div data-v-374fa2ba="" class="bottom"><div data-v-5a3ef735="" data-v-374fa2ba=""><div data-v-5a3ef735="" class="flooter-top"><div data-v-5a3ef735="" class="left-center"></div><div data-v-5a3ef735=""><img data-v-5a3ef735="" class="left-img" src="data:image/png;base64,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"><span data-v-5a3ef735="" class="left-text">立即注册免费试用</span></div><div data-v-5a3ef735="" class="left-center"></div><div data-v-5a3ef735=""><a data-v-5a3ef735="" class="el-link el-link--default" href="https://regist.chat5188.com/" target="_blank"><span class="el-link__inner"><button data-v-5a3ef735="" class="right-button">立即获取试用账号</button></span></a></div><div data-v-5a3ef735="" class="left-center"></div></div></div></div></div></div></div></div></div><div data-v-751e02a8="" class="el-row" style="margin-left: -10px; margin-right: -10px;"><div data-v-751e02a8="" class="el-col el-col-24 is-guttered" style="padding-right: 10px; padding-left: 10px;"><div data-v-0a4044d9="" data-v-751e02a8="" class="content"><div data-v-0a4044d9="" class="el-card is-never-shadow box-card"><div class="el-card__body" style=""><div data-v-0a4044d9="" class="app"><div data-v-0a4044d9="" class="el-row" style="margin-left: -10px; margin-right: -10px;"><div data-v-0a4044d9="" class="el-col el-col-4 is-guttered" style="padding-right: 10px; padding-left: 10px;"></div><div data-v-0a4044d9="" class="el-col el-col-16 is-guttered" style="padding-right: 10px; padding-left: 10px;"><div data-v-0a4044d9=""><div data-v-0a4044d9="" class="header"><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title">产品</div><div data-v-0a4044d9="" class="header-text"> 在线客服 </div><div data-v-0a4044d9="" class="header-text"> 工单系统 </div><div data-v-0a4044d9="" class="header-text"> 智能机器人 </div></div><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title app">服务与支持</div><div data-v-0a4044d9="" class="header-text">常见问题</div><div data-v-0a4044d9="" class="header-text"> 隐私声明 </div><div data-v-0a4044d9="" class="header-text"> 用户协议 </div><div data-v-0a4044d9="" class="header-text"> 开发者中心 </div></div><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title">关于我们</div><div data-v-0a4044d9="" class="header-text"> 公司介绍 </div><div data-v-0a4044d9="" class="header-text"> 资质荣誉 </div><div data-v-0a4044d9="" class="header-text"> 联系我们 </div><div data-v-0a4044d9="" class="header-text"> 加入我们 </div><div data-v-0a4044d9="" class="header-text">行情资讯</div></div><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title app">下载</div><div data-v-0a4044d9="" class="header-text"> 下载中心 </div><div data-v-0a4044d9="" class="header-text"> 更新日志 </div></div><div data-v-0a4044d9="" class="header-div QR"><div data-v-0a4044d9="" class="header-img-text">小美科技</div><img data-v-0a4044d9="" class="QR-img" src="static/picture/wecatCode.ea9ab83f.png"></div></div></div></div><div data-v-0a4044d9="" class="el-col el-col-4 is-guttered" style="padding-right: 10px; padding-left: 10px;"></div></div></div><div data-v-0a4044d9="" class="pc"><div data-v-0a4044d9="" class="el-row" style="margin-left: -10px; margin-right: -10px;"><div data-v-0a4044d9="" class="el-col el-col-2 is-guttered" style="padding-right: 10px; padding-left: 10px;"></div><div data-v-0a4044d9="" class="el-col el-col-20 is-guttered" style="padding-right: 10px; padding-left: 10px;"><div data-v-0a4044d9=""><div data-v-0a4044d9="" class="header"><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title">产品</div><div data-v-0a4044d9="" class="header-text"> 在线客服 </div><div data-v-0a4044d9="" class="header-text"> 工单系统 </div><div data-v-0a4044d9="" class="header-text"> 智能机器人 </div></div><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title app">服务与支持</div><div data-v-0a4044d9="" class="header-text app">常见问题</div><div data-v-0a4044d9="" class="header-text app">隐私声明</div><div data-v-0a4044d9="" class="header-text app"> 用户协议 </div><div data-v-0a4044d9="" class="header-text app">开发者中心</div></div><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title">关于我们</div><div data-v-0a4044d9="" class="header-text"> 公司介绍 </div><div data-v-0a4044d9="" class="header-text">资质荣誉</div><div data-v-0a4044d9="" class="header-text"> 联系我们 </div><div data-v-0a4044d9="" class="header-text">加入我们</div><div data-v-0a4044d9="" class="header-text">行情资讯</div></div><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-title app">下载</div></div><div data-v-0a4044d9="" class="header-div"><div data-v-0a4044d9="" class="header-img-text">小美科技</div><img data-v-0a4044d9="" class="QR-img" src="static/picture/wecatCode.ea9ab83f.png"></div></div></div></div><div data-v-0a4044d9="" class="el-col el-col-2 is-guttered" style="padding-right: 10px; padding-left: 10px;"></div></div></div><div data-v-0a4044d9="" class="el-divider el-divider--horizontal" role="separator" style="--el-border-style:solid;"></div><div data-v-0a4044d9=""><div data-v-0a4044d9="" class="end"><div data-v-0a4044d9="" class="end-div"><span data-v-0a4044d9="" class="header-end-text">Copyright 大连市小美网络科技技术有限公司</span></div><div data-v-0a4044d9="" class="end-div"><span data-v-0a4044d9="" class="header-end-text">辽ICP备19018543号-1</span></div><div data-v-0a4044d9="" class="end-div"><img data-v-0a4044d9="" class="header-end-img" src="data:image/png;base64,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"><span data-v-0a4044d9="" class="header-end-text">辽公网安备 21021102000889</span></div></div></div></div></div></div></div></div></div></div></div><script></script><div id="el-popper-container-9704"><div class="el-popper is-light el-popover" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-0" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="left" style="z-index: 2001; position: absolute; left: auto; top: 233px; width: 200px; display: none; right: 102px; bottom: auto;"><div data-v-72e14315=""><div data-v-72e14315="" class="title">解决您的客户服务需求</div><div data-v-72e14315="" class="content">您的需求就是我们的专业</div></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; top: 0px;"></span></div><div class="el-popper is-light el-popover" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-1" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="left" style="z-index: 2002; position: absolute; left: auto; top: 338px; width: 100px; display: none; right: 102px; bottom: auto;"><div data-v-72e14315="" class="demo-rich-conent"><img data-v-72e14315="" src="static/picture/wecatCode.ea9ab83f.png"></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; top: 0px;"></span></div><div class="el-popper is-light el-popover el-popover--plain" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-2" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="left" style="z-index: 2003; position: absolute; left: auto; top: 443px; width: 150px; display: none; right: 102px; bottom: auto;"><div data-v-72e14315="" class="demo-rich-conent"><div data-v-72e14315="">3352825133</div><div data-v-72e14315="">3486282780</div></div><span class="el-popper__arrow" data-popper-arrow="" style="position: absolute; top: 0px;"></span></div><div class="el-popper is-pure is-light" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-3" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2004; position: absolute; left: 248px; top: 70px; display: none; right: auto; bottom: auto;"><div class="el-menu--horizontal el-menu--popup-container"><ul class="el-menu el-menu--popup el-menu--popup-bottom-start" style="--el-menu-level:1;"><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-zaixiankefu"></i><span data-v-751e02a8="" class="span">在线客服</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-zu1778"></i><span data-v-751e02a8="" class="span">工单系统</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-jiqiren1"></i><span data-v-751e02a8="" class="span">智能机器人</span></li><li data-v-751e02a8="" class="el-sub-menu" role="menuitem" ariahaspopup="true" ariaexpanded="false"><div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger"><i data-v-751e02a8="" class="iconfont icon-disanfangyingyong"></i><span data-v-751e02a8="" class="span">第三方客服服务</span><i class="el-icon el-sub-menu__icon-arrow" style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1024 1024"><path fill="currentColor" d="M340.864 149.312a30.592 30.592 0 0 0 0 42.752L652.736 512 340.864 831.872a30.592 30.592 0 0 0 0 42.752 29.12 29.12 0 0 0 41.728 0L714.24 534.336a32 32 0 0 0 0-44.672L382.592 149.376a29.12 29.12 0 0 0-41.728 0z"></path></svg></i></div><div class="el-popper is-pure is-light" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-4" data-popper-reference-hidden="true" data-popper-escaped="true" data-popper-placement="right-start" style="z-index: 2005; position: absolute; left: 6px; top: 0px; display: none; right: auto; bottom: auto;"><div class="el-menu--horizontal el-menu--popup-container"><ul class="el-menu el-menu--popup el-menu--popup-right-start" style="--el-menu-level:2;"><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-xiaochengxu1"></i><span data-v-751e02a8="" class="span">小程序</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-program-full"></i><span data-v-751e02a8="" class="span">网页客服</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-qiyeweixin"></i><span data-v-751e02a8="" class="span">企业微信</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-app"></i><span data-v-751e02a8="" class="span">app</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-douyintexiao"></i><span data-v-751e02a8="" class="span">抖音</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-gongzhonghao1"></i><span data-v-751e02a8="" class="span">公众号</span></li></ul></div></div></li></ul></div></div><div class="el-popper is-pure is-light" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-5" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2006; position: absolute; left: 424px; top: 70px; display: none; right: auto; bottom: auto;"><div class="el-menu--horizontal el-menu--popup-container"><ul class="el-menu el-menu--popup el-menu--popup-bottom-start" style="--el-menu-level:1;"><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-a-changjianwentixiangguanwenti"></i><span data-v-751e02a8="" class="span">常见问题</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-declare"></i><span data-v-751e02a8="" class="span">隐私声明</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-navicon-yhxy"></i><span data-v-751e02a8="" class="span">用户协议</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-kaifazhezhongxinSDKxiazai"></i><span data-v-751e02a8="" class="span">开发者中心</span></li></ul></div></div><div class="el-popper is-pure is-light" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-6" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2007; position: absolute; left: 578px; top: 70px; display: none; right: auto; bottom: auto;"><div class="el-menu--horizontal el-menu--popup-container"><ul class="el-menu el-menu--popup el-menu--popup-bottom-start" style="--el-menu-level:1;"><li data-v-751e02a8="" class="el-menu-item is-active" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-xiazaizhongxin"></i><span data-v-751e02a8="" class="span">下载中心</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-server-update-full"></i><span data-v-751e02a8="" class="span">更新日志</span></li></ul></div></div><div class="el-popper is-pure is-light" tabindex="-1" aria-hidden="true" role="tooltip" id="el-id-9704-7" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="z-index: 2008; position: absolute; left: 678px; top: 70px; display: none; right: auto; bottom: auto;"><div class="el-menu--horizontal el-menu--popup-container"><ul class="el-menu el-menu--popup el-menu--popup-bottom-start" style="--el-menu-level:1;"><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-gongsijieshao-01"></i><span data-v-751e02a8="" class="span">公司介绍</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-rongyu"></i><span data-v-751e02a8="" class="span">资质荣誉</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-lianxiwomen1"></i><span data-v-751e02a8="" class="span">联系我们</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-jiaruwomen"></i><span data-v-751e02a8="" class="span">加入我们</span></li><li data-v-751e02a8="" class="el-menu-item" role="menuitem" tabindex="-1"><i data-v-751e02a8="" class="iconfont icon-xinwenzixun-xianxing"></i><span data-v-751e02a8="" class="span">行情资讯</span></li></ul></div></div></div>	<div style="display:none;"><a href="https://smalltool.github.io/">仿站神器</a></div>
-</body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>滨海文化中心</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" href="css/silde.css" />
+<link rel="stylesheet" href="css/book-silde.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/common.js" ></script>
+<script src="js/koala.min.1.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(function(){
+				$('#dowebok').fullpage({
+					sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+					anchors: ['page1', 'page2', 'page3', 'page4','page5','page6','page7','page8','page9'],
+					menu: '#menu'
+				});
+			});
+</script>
+<script>//图片3d旋转
+$(function(){
+	$(".section-two-left .section-btn").click(function(){
+		$(".section-two-left .rotate-box").addClass("xuanzhuan")	;
+		$(".section-two-left .section-btn").hide()
+		
+	})	//左边旋转
+	$(".section-two-left .return-btn").click(function(){
+			$(".section-two-left .rotate-box").removeClass("xuanzhuan")	;
+			$(".section-two-left .section-btn").show(1000)
+	})//返回
+	$(".section-two-right .section-btn").click(function(){
+		$(".section-two-right .rotate-box").addClass("xuanzhuan");
+		$(".section-two-right .section-btn").hide()
+	})	//右边旋转
+		$(".section-two-right .return-btn").click(function(){
+			$(".section-two-right .rotate-box").removeClass("xuanzhuan")	;
+			$(".section-two-right .section-btn").show(1000)
+	})//返回
+	
+	//东方演艺图片滑动
+	var n=0;
+	var liLength= $(".art-box ul li").length;
+	var liHeight=$(".art-box ul li").height();
+	var ulHeight= liLength*liHeight;
+$(".art-box ul").height(ulHeight);
+	$('.next-btn').click(function(){
+		n++;
+		if(n==liLength){
+			$(".art-box ul").animate({
+			top:"0px"
+		});
+		n=0;
+		}else{
+			$(".art-box ul").animate({
+			top:-n*liHeight+"px"
+		});
+		}
+	})
+	$(".prev-btn").click(function(){
+		n--;
+		if(n<0){
+			$(".art-box ul").css('top','0px');
+			n=0;
+		}else if(n>0)
+		{
+			$(".art-box ul").animate({
+			top:-n*liHeight+"px"
+			});
+		}else{
+			$(".art-box ul").animate({
+			top:"0px"
+			});
+		}
+	})
+})
+</script>
+<!--书山文海图切换-->
+<script type="text/javascript">
+$(function(){
+	$(".yScrollListTitle h1").click(function  () {
+		var index=$(this).index(".yScrollListTitle h1");
+		$(this).addClass("yth1click").siblings().removeClass("yth1click");
+		$($(".yScrollListInList")[index]).show().siblings().hide();
+	})
+	$(".yScrollListInList1 ul").css({width:$(".yScrollListInList1 ul li").length*(172+54)+"px"});
+	$(".yScrollListInList2 ul").css({width:$(".yScrollListInList2 ul li").length*(172+54)+"px"});
+	var numwidth=(172+54)*4;
+	$(".yScrollListInList .yScrollListbtnl").click(function(){
+		var obj=$(this).parent(".yScrollListInList").find("ul");
+		if (!(obj.is(":animated"))) {
+			var lefts=parseInt(obj.css("left").slice(0,-2));
+			if(lefts<30){
+				obj.animate({left:lefts+numwidth},1000);
+			}
+		}
+	})
+	$(".yScrollListInList .yScrollListbtnr").click(function(){
+		var obj=$(this).parent(".yScrollListInList").find("ul");
+		var objcds=-(30+(Math.ceil(obj.find("li").length/5)-2)*numwidth);
+		if (!(obj.is(":animated"))) {
+			var lefts=parseInt(obj.css("left").slice(0,-2));
+			if(lefts>objcds){
+				obj.animate({left:lefts-numwidth},1000);
+			}
+		}
+	})
+})
+</script>
+<script type="text/javascript">
+	$(function(){
+		$(".open").click(function(){
+		var winHeight =$(window).height();
+		var winWidth =$(window).width();
+		$(".open-eye img").hide();
+		$(".open-eye").css("background","white")
+			$('.open-eye').animate({
+				height:"433px",
+				width:"435px",
+				marginTop:"-240px",
+				marginLeft:"-180px",
+			},800,function(){
+				$(".open-eye").animate({
+					width:winWidth+"px",
+					height:winHeight+"px",
+					marginTop:"-420px",
+					marginLeft:"-560px",
+				})//宽高变化 
+			});
+			$(".open-eye p").fadeIn(4000);
+		})//市民活动弹出层
+		$(".public-return").click(function(){
+			$(".open-eye").animate({
+				height:"72px",
+				width:"72px",
+				left:"180px",
+				marginTop:"125px",
+				marginLeft:"0px"
+			});//关闭弹出层
+			$(".open-eye img").show();
+			$(".open-eye").css("background","");
+		})
+	})
+</script>
+</head>
+	<body>
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>		
+		<li data-menuanchor="page2"><a href="#page2">建设故事</a></li>		
+		<li data-menuanchor="page3"><a href="#page3">东方演艺</a></li>	
+		<li data-menuanchor="page4"><a href="#page4">美术天地</a></li>
+		<li data-menuanchor="page5"><a href="#page5">探索世界</a></li>
+		<li data-menuanchor="page6"><a href="#page6">市民活动</a></li>
+		<li data-menuanchor="page7"><a href="#page7">文山书海</a></li>
+		<li data-menuanchor="page8"><a href="#page8">文化长廊</a></li>
+		<li data-menuanchor="page9"><a href="#page9">关注我们</a></li>
+	</ul>
+	
+	
+	<div id="dowebok">
+		<!--首页-->
+		<div class="section section-1">
+			<div class="bg"><img src="images/section-1.jpg" /></div>
+			<div class="logo" ></div>
+			<div class="v-word" id="biankuan"></div>
+			<div class="section-1-content">
+				
+			</div>
+		</div>
+		<!--建设故事-->
+		<div class="section section-2">
+			<div class="bg"><img src="images/section-2.jpg" /></div>
+			<div class="section-title black">
+				<p>建筑故事</p>
+				<p>The construction of the story</p>
+			</div>
+			<div class="section-content">
+				<div class="section-two-left">
+					<div class="photo-container">
+						<div class="rotate-box">
+							<img src="images/build-1.jpg"/>
+					    	<div class="text">
+					            <h2>这是一个标题</h2>
+					            <p>这是一段图片相关的简介内容这是一段图片相关的简介内容这是一段图片相关的简介内容这是一段图片相关的简介内容这是一段图片相关的简介内容。。</p>
+					            <div class="return-btn">返回</div>
+					    	</div>
+						</div>
+						<div class="section-btn">建设故事</div>
+					</div>
+					
+				</div>
+				<div class="section-two-right">
+					<div class="photo-container">
+						<div class="rotate-box">
+							<img src="images/build-2.jpg"/>
+					    	<div class="text">
+					            <p>这是一段图片相关的简介内容简介内简介内</p>
+					            <p>这是一段图片相关的简介内容简介内简介内</p>
+					            <p>这是一段图片相关的简介内容简介内简介内</p>
+					            <div class="submit-btn">提交留言</div>
+					             <div class="return-btn">返回</div>
+					    	</div>
+						</div>
+						<div class="section-btn">我要参与</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--东方演艺-->
+		<div class="section section-3">
+			<div class="bg"><img src="images/section-3.jpg" /></div>
+			<div class="section-title white">
+				<p>东方演艺</p>
+				<p>Oriental Performing Arts</p>
+			</div>
+				<div class="section-content">
+						<div class="art-box">
+						<ul>
+							<li>
+								<div class="art-box-left">
+									<img src="images/art-1.png"/>
+								</div>
+								<div class="art-box-right">
+									<div class="art-right-top">
+										<div class="art-right-top-1"><img src="images/art-2.png"/></div>
+										<div class="art-right-top-2"><img src="images/art-3.png"/></div>
+									</div>
+									<div class="art-right-bottom">
+										<img src="images/art-4.png"/>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="art-box-left">
+									<img src="images/build-1.jpg"/>
+								</div>
+								<div class="art-box-right">
+									
+								</div>
+							</li>
+							<li>
+								<div class="art-box-left">
+									<img src="images/build-2.jpg"/>
+								</div>
+								<div class="art-box-right">
+									
+								</div>
+							</li>
+						</ul>
+						
+						
+						
+					</div>
+						
+				</div>
+					<a class="online" href="#">在线订票</a>
+						<a class="online" style="top: 74px;left: 550px;" href="#">演出预告</a>
+				<div class="next-btn"></div>
+				<div class="prev-btn"></div>
+			</div>
+			<!--美术天地-->
+		<div class="section section-4">
+			<div class="bg"><img src="images/section-4.jpg" /></div>
+			<div class="section-title black">
+				<p>美术天地</p>
+				<p>The art world</p>
+				</div>
+				<div class="section-content">
+					<div class="paint-one">
+						<img src="images/paint-1.png"/>
+					</div>
+					<div class="paint-word-one paint-word">
+						<h2>当代艺术家</h2>
+						<p>介绍并展示当代艺术家的代表性和最有影响力的介绍并展示当代艺术家的代表性和最有影响力的</p>
+						<a href="#">进入拍卖会</a>
+					</div>
+					<div class="paint-two">
+						<img src="images/paint-2.png"/>
+					</div>
+					<div class="paint-word-two paint-word">
+						<h2>当代艺术家</h2>
+						<p>介绍并展示当代艺术家的代表性和最有影响力的介绍并展示当代艺术家的代表性和最有影响力的</p>
+						<a href="#">进入拍卖会</a>
+					</div>
+					<div class="paint-three">
+						<img src="images/paint-3.png"/>
+					</div>
+				</div>
+			
+		</div>
+		<!--探索世界-->
+		<div class="section section-5">
+			<div class="bg"><img src="images/section-5.jpg" /></div>
+			<div class="section-title white">
+				<p>探索世界</p>
+				<p>Explore the  world</p>
+				</div>
+			<div class="section-content">
+				<div class="banner_index">
+				  <a href="javascript:void(0);" class="btn btnPre" id="banner_index_pre"></a>
+				  <a href="javascript:void(0);" class="btn btnNext" id="banner_index_next"></a>
+			    <ul class="banner_wrap" id="banner_index">
+			      <li><a href="#" ><img src="images/explore-1.png"/></a></li>
+			      <li><a href="#" ><img src="images/explore-1.png"/></a></li>
+			      <li><a href="#"><img src="images/explore-1.png"/></a></li>
+			      <li><a href="#" ><img src="images/explore-1.png"/></a></li>
+			    </ul>
+			</div>
+			<!--<div class="indexBanner_num" id="index_numIco"></div>-->
+			<script type="text/javascript">
+					var ShowPre1 = new ShowPre({box:"banner_index",Pre:"banner_index_pre",Next:"banner_index_next",numIco:"index_numIco",loop:1,auto:1});
+			</script>
+			</div>
+		</div>
+		<!--市民活动-->
+		<div class="section section-6">
+			<div class="bg"><img src="images/section-6.jpg" /></div>
+		<div class="section-title black">
+			<p>市民活动</p>
+			<p>Public activities</p>
+		</div>
+				<div class="section-content">
+					<div class="section-six-left">
+						<h2>悠闲生活</h2>
+						<p>科技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一</p>
+						<div class="open-eye">
+							<img src="images/open-eye_03.png " class="open"/>
+							<div class="public-return">返回</div>
+							<h2 class="public-title">市民活动主题</h2>
+							<p class="public-content">技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一科技进步使休闲生活成为时代的主体之一科</p>
+						</div>
+					</div>
+					<div class="section--six-right">
+						<img src="images/public-pic.jpg" width="435px" height="418px"/>
+						<div class="mark"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+		</div>
+		<!--书山文海-->
+		<div class="section section-7">
+			<div class="bg"><img src="images/section-7.jpg" /></div>
+			<div class="section-title white">
+				<p>书山人海</p>
+				<p>The mountains and ocean of books </p>
+				</div>
+				<div class="section-content">
+					<div class="yScrollList">
+						<div class="yScrollListTitle">
+							<h1 class="yth1click">全部图书</h1>
+							<h1 class="ytitleh12">玄幻武侠</h1>
+							<h1 class="ytitleh12">都市言情</h1>
+							<h1 class="ytitleh12">恐怖悬疑</h1>
+							<h1 class="ytitleh12">文学名著</h1>
+							<h1 class="ytitleh12">其他分类</h1>
+						</div>
+				<div class="yScrollListIn">
+					<!--全部图书-->
+					<div class="yScrollListInList yScrollListInList1" style="display:block;">
+						<ul>
+							<li>
+								<a href="">
+									<img src="images/book-1.jpg">
+									<p>人造卫星航空</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/book-2.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+										<img src="images/book-1.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/book-2.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/book-1.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/book-2.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+								<img src="images/book-1.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/book-1.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>剩余88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>剩余88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>剩余88人次</span>
+								</a>
+							</li>
+						</ul>
+						<div class="yScrollListbtn yScrollListbtnl"></div>
+						<div class="yScrollListbtn yScrollListbtnr"></div>
+					</div>
+					<!--玄幻武侠-->
+					<div class="yScrollListInList yScrollListInList2">
+						<ul>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>TP-LINK TL-WN725N 微型150M无线USB网卡</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>外星人航空工直升飞机</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>外星人航空工直升飞机</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>外星人航空工直升飞机</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/inimg.jpg">
+									<p>外星人航空工直升飞机</p>
+									<span>总需88人次</span>
+								</a>
+							</li>
+						</ul>
+						<div class="yScrollListbtn yScrollListbtnl"></div>
+						<div class="yScrollListbtn yScrollListbtnr"></div>
+					</div>
+						<!--都市言情-->
+					<div class="yScrollListInList yScrollListInList3">
+						
+						<div class="yScrollListbtn yScrollListbtnl"></div>
+						<div class="yScrollListbtn yScrollListbtnr"></div>
+					</div>
+					<!--恐怖悬疑-->
+					<div class="yScrollListInList yScrollListInList4">
+						
+						<div class="yScrollListbtn yScrollListbtnl"></div>
+						<div class="yScrollListbtn yScrollListbtnr"></div>
+					</div>
+					<!--文学名著-->
+					<div class="yScrollListInList yScrollListInList5">
+						
+						<div class="yScrollListbtn yScrollListbtnl"></div>
+						<div class="yScrollListbtn yScrollListbtnr"></div>
+					</div>
+					<!--其他分类-->
+					<div class="yScrollListInList yScrollListInList6">
+						
+						<div class="yScrollListbtn yScrollListbtnl"></div>
+						<div class="yScrollListbtn yScrollListbtnr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--文化长廊-->
+		<div class="section section-8">
+			<div class="bg"><img src="images/section-8.jpg" /></div>
+			<div class="section-title black">
+				<p>文化长廊</p>
+				<p>Cultural corridor</p>
+				</div>
+				<div class="section-content">
+					<div id="fsD1" class="focus" style="margin: 30px 0 0 30px;" >  
+					    <div id="D1pic1" class="fPic">  
+					        <div class="fcon" style="display: none;">
+					            <a  href="#"><img src="images/culture-pic.png" style="opacity: 1; "></a>
+					            <span class="shadow"><a  href="javascript:void(0)">滨海文化中心活动专题</a></span>
+					        </div>
+					        
+					        <div class="fcon" style="display: none;">
+					            <a  href="#"><img src="images/culture-pic.png" style="opacity: 1; "></a>
+					            <span class="shadow"><a  href="javascript:void(0)">滨海文化中心活动专题2</a></span>
+					        </div>
+					        
+					        <div class="fcon" style="display: none;">
+					            <a  href="#"><img src="images/culture-pic.png" style="opacity: 1; "></a>
+					            <span class="shadow"><a  href="javascript:void(0)">滨海文化中心活动专题3</a></span>
+					        </div>
+					        
+					        <div class="fcon" style="display: none;">
+					            <a  href="#"><img src="images/culture-pic.png" style="opacity: 1; "></a>
+					            <span class="shadow"><a  href="javascript:void(0)">滨海文化中心活动专题4</a></span>
+					        </div>    
+					    </div>
+    		<div class="fbg">  
+			    <div class="D1fBt" id="D1fBt">  
+			        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
+			        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+			        <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
+			        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>  
+			    </div>  
+    		</div>  
+		    <span class="prev"></span>   
+		    <span class="next"></span>    
+			</div>  
+			</div>
+			<script type="text/javascript">
+					Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+					Qfast(false, 'widgets', function () {
+						K.tabs({
+							id: 'fsD1',   //����ͼ���id  
+							conId: "D1pic1",  //** ��ͼ����id  
+							tabId:"D1fBt",  
+							tabTn:"a",
+							conCn: '.fcon', //** ��ͼ������class       
+							auto: 1,   //�Զ����� 1��0
+							effect: 'fade',   //Ч������
+							eType: 'click', //** ����¼�
+							pageBt:true,//�Ƿ��а�ť�л�ҳ��
+							bns: ['.prev', '.next'],//** ǰ��ť����class                          
+							interval: 3000  //** ͣ��ʱ��  
+						}) 
+			})  
+</script>
+		</div>
+		<!--关注我们-->
+			<div class="section section-9">
+			<div class="bg"><img src="images/section-9.jpg" /></div>
+			<div class="section-content">
+				<div class="focus-us">
+					<img src="images/focus-us.png"/>
+				</div>
+				<div class="adress">地址：天津市滨海新区紫云公园北侧</div>
+				<div class="contact-way">
+					<p>联系电话：1582555555</p>
+					<p>监督电话：1582555555</p>
+					<p>常用邮箱：569234587@qq.com</p>
+					<a href="#">进入官网</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,988 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+li{
+	list-style: none;
+}
+.clear{clear: both;}
+/*左侧导航*/
+	#menu { 
+		margin: 0; 
+		padding: 0; position: fixed; 
+		left: 0px; 
+		top: 230px; 
+		list-style-type: none; 
+		z-index: 70;
+		opacity: 0.8;
+		background: #565662;
+	}
+	#menu li {
+		margin: 0 10px 0 0;
+		font-size: 14px;
+	}
+	#menu a {
+		display: inline-block;
+		padding: 10px 20px;
+		color: white;
+		text-decoration: none;
+	}
+	#menu .active a {
+		color: white;
+		border-left: 2px solid #ff4366;
+		background-position: 0;
+	}
+	/*左侧导航end*/
+	.section {
+		font-family: "微软雅黑";
+		color: #fff;
+		position: relative;
+	}
+	.section {
+		position: relative;
+		overflow: hidden;
+	}
+	.section .bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.section .bg img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*首页*/
+ .v-word{
+	width: 0px;
+	height: 682px;
+	background: url(../images/v-word.png) no-repeat;
+	position: absolute;
+	top: -20px;
+	transition: all 1s;
+	transition-duration: 1s;
+}
+.active .v-word{
+width: 100%;
+height: 682px;
+transition-delay: 1s;
+}
+.section-1 .logo{
+	width: 259px;
+	height: 56px;
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	z-index: 999;
+	left: 37%;
+	top:45px;
+	opacity: 0.1;
+	transition: all 0.7s; 
+}
+.active .logo{
+	opacity: 1;
+	left: 37%;
+	top:45px;
+	transition-delay: 1s;
+	transition-duration: 0.7s;
+}
+.section-1-content{
+	opacity: 0.1;
+	position: absolute;
+	z-index: 999;
+	width: 352px;
+	height: 133px;
+	background: url(../images/logo-word.png) no-repeat;
+	left: 500px;
+	top: 380px;
+	transition: all 1s;
+}
+.active .section-1-content{
+	bottom: 0;
+	opacity: 1;
+	transition-delay: 1s;
+	transition-duration: 1s;
+}
+/*载入动画*/
+#biankuan{
+-webkit-backface-visibility:visible;
+-webkit-transform-origin:center center;
+-webkit-animation:demo 0.5s ;
+} 
+@-webkit-keyframes demo{
+0%{
+width:0px;
+} 100%{
+width:1366px;
+} 
+}
+#biankuan{
+-moz-backface-visibility:visible;
+-moz-transform-origin:center center;
+-moz-animation:demo 0.5s  ;
+} 
+@-moz-keyframes demo{
+0%{
+width:0px;
+} 
+100%{
+width:1366px;
+} 
+}
+/*首页 end*/
+
+/*建设故事*/
+.section-content{
+	width: 926px;
+	height: 500px;
+	position: absolute;
+	z-index: 10;
+	top: 180px;
+	left: 25%;
+	opacity:0;
+	transition: all 1s;
+}
+.active .section-content{
+	opacity: 1;
+	transition-delay: 0.8s;
+	transition-duration: 0.7s;
+}
+.section-2 .section-content div{
+	position: absolute;
+	z-index: 999;
+	width: 448px;
+	height: 500px;
+}
+.section-2 .section-content .section-two-right{
+	position: absolute;
+	z-index: 10;
+	width: 448px;
+	height: 500px;
+	left: 480px;
+}
+.section-2 .section-content .section-two-right  .text p{
+	padding:15px 0px 5px 0px ;
+	border-bottom: 1px solid #cccccc;
+	margin: 0 15px 0 15px;
+}
+.section-title{
+	position: absolute;
+	z-index: 0;
+	top: 80px;
+	left: 25%;
+	font-size: 16px;
+	opacity: 0;
+	transition: all 1s;
+}
+.active .section-title{
+	opacity: 1;
+	transition-delay: 0.8s;
+	transition-duration: 0.7s;
+}
+.black{
+	color: black;
+}
+.white{
+	color: white;
+}
+.section-title p:nth-child(1){
+	font-size: 30px;
+}
+.section-2 .section-content .section-btn{
+	width: 144px;
+	height: 42px;
+	line-height: 42px;
+	background: #524e62;
+	opacity: 0.6;
+	position: absolute;
+	left: 35%;
+	top: 45%;
+	text-align: center;
+	cursor: pointer;
+}
+.section-2 .section-content .section-btn:hover{
+	background: #c17381;
+	opacity: 0.7;
+}
+.section-2 .section-content .return-btn{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	background: #524e62;
+	color: white;
+	position: absolute;
+	top: 88%;
+	left: 65%;
+	cursor: pointer;
+}
+.section-2 .section-content .return-btn:hover{
+	background: #c17381;
+}
+.section-2 .section-content .submit-btn:hover{
+	background: #c17381;
+}
+.section-2 .section-content .submit-btn{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	background: #524e62;
+	color: white;
+	position: absolute;
+	top: 88%;
+	left: 30%;
+	cursor: pointer;
+}
+/*3d翻转*/
+.photo-container {
+	perspective: 1200px; /* 透视视图 */
+	width:45%;
+	float:left;
+}
+.rotate-box {
+	position:relative;
+	transform-style: preserve-3d; /* 3D 转换 */
+	transition:1s ease; /* 转换效果持续 1秒 */
+}
+.rotate-box img {width:100%;height:auto;}
+.text {
+		position:absolute;top:0;
+		width:100%;height:100%;
+		transform: rotateY(180deg) translateZ(1px); /* 反转180度 并设置z轴让其置于图片背面 */
+		color:#666;
+		text-align:center;
+		opacity:1;
+		background:rgba(255,255,255,.9);
+		transition: 1s opacity;
+}
+.text h2{
+	padding: 30px 0 20px 0;
+}
+.text p{
+	text-align: left;
+	padding: 0 20px 0 20px;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+/*.photo-container:hover .rotate-box{
+transform: rotateY(180deg);
+}*/
+.xuanzhuan{transform: rotateY(180deg)}
+/*.photo-container:hover .text{opacity:1}*/
+
+/*通过伪元素（:after）给图像添加一个透视阴影，使整体更有3D立体感觉。*/
+
+.rotate-box:after {
+content:' ';
+display:block;
+width:100%;
+height:7vw; /* vw是移动设计备窗体单位*/
+transform:rotateX(90deg);
+background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%); /* radial-gradient 是径向渐变 */
+}
+/*建设故事 end*/
+/*东方演艺*/
+.section-3 .section-content{
+	top: 80px;
+	left: 25%;
+	height: 420px;
+	position: relative;
+	overflow: hidden;
+}
+.section-content .art-box{
+	width: 922px;
+	height: 420px;
+	overflow: hidden;
+	position: relative;
+}
+.art-box ul li {
+	height: 420px;
+	width: 920px;
+}
+.art-box ul li img{
+	width: 100%;
+	-webkit-filter:grayscale(70%); 
+	-moz-filter:grayscale(70%); 
+	-ms-filter:grayscale(70%); 
+	-o-filter:grayscale(70%); 
+	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0.7); 
+	-webkit-filter:grayscale(0.7)
+}
+.art-box ul li img:hover{
+	-webkit-filter:grayscale(0%); 
+	-moz-filter:grayscale(0%); 
+-ms-filter:grayscale(0%); 
+-o-filter:grayscale(0%); 
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0); 
+-webkit-filter:grayscale(0)
+}
+.art-box ul{
+	position: absolute;
+	height: 420px;
+}
+.art-box ul li .art-box-left{
+	width: 294px;
+	height: 420px;
+	float: left;
+}
+.art-box ul li .art-box-right{
+	width:590px;
+	height: 420px;
+	float: left;
+	margin-left: 28px;
+}
+.art-box-right .art-right-top{
+	width:590px;
+	height: 200px;
+}
+.art-box-right .art-right-top>div{
+	width: 290px;
+	height: 200px;
+	float: left;
+}
+.art-box-right .art-right-top div:nth-child(2){
+	margin-left: 10px;
+}
+.art-box-right .art-right-bottom{
+	width:590px;
+	height: 200px;
+	margin-top: 25px;
+}
+
+.section-3 .online{
+	display: block;
+	width: 146px;
+	height: 44px;
+	border:1px solid  #bf435b;
+	line-height: 44px;
+	text-align: center;
+	color: white; 
+	position: relative;
+	top: 120px;
+	left: 25%;
+	opacity: 0;
+	transition: all 1s;
+}
+.active .online{
+	opacity: 1;
+	transition-delay: 1s;
+	transition-duration: 0.7s;
+}
+.section-3 .online:hover{
+	transition: 0.4s;
+	transition-duration: 0.2s;
+	background:#bf435b ;
+}
+.next-btn{
+	height: 27px;
+	width: 15px;
+	background: url(../images/next-btn.png) no-repeat;
+	position: relative;
+	right: -1289px;
+	top: -190px;
+}
+.prev-btn{
+	height: 27px;
+	width: 15px;
+	background: url(../images/prev-btn.png) no-repeat;
+	position: relative;
+	left: 320px;
+	top: -220px;
+}
+/*东方演艺  end*/
+/*美术天地*/
+.section-4 .section-content{
+	position: relative;
+	height: 900px;
+	width: 920px;
+	top: 0px;
+}
+.section-4 .section-content div{
+	position: absolute;
+	width: 460px;
+	height: 250px;
+	overflow: hidden;
+}
+.section-4 .section-content img:hover{
+	transform: scale(1.5);
+	transition: all 2s;
+}
+.section-4 .paint-one{
+	top: 270px;
+}
+.section-4 .paint-word-one{
+	background: #2c2d3f;
+	top: 520px;
+}
+.section-4 .paint-two,.paint-three,.paint-word-two{
+	right: 0px;
+	top:20px;
+}
+.paint-three{
+	top:520px;
+}
+.paint-word-two{
+	background: #2c2d3f;
+	top: 270px;
+}
+.paint-word h2{
+	margin: 25px  20px 20px 20px;
+	font-size: 18px;
+}
+.paint-word p{
+	margin: 0  20px 0  20px;
+	font-size: 14px;
+	min-height: 50px;
+}
+.paint-word a{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: #2b2c3e;
+	text-align: center;
+	background: white;
+	margin: 25px  20px 0  20px;
+	font-size: 14px;
+}
+.paint-word a:hover{
+	background: #bf435b;
+	color: white;
+}
+/*探索世界 end*/
+.section-5 .section-content{
+	top: 170px;
+}
+/*探索世界 end*/
+
+/*市民活动*/
+.section-6 .section-content{
+	left: 360px;
+	top:180px ;
+	color: white;
+
+}
+.section-6 .section-six-left{
+	position: absolute;
+	left: 16px;
+	width: 435px;
+	height: 433px;
+	background: url(../images/section-six-left-bg.png) no-repeat;
+
+}
+.section-6 .section-six-left h2{
+	text-align: center;
+	margin: 110px 0 20px 0;
+	font-size: 18px;
+}
+.section-6 .section-six-left p{
+	margin: 0 80px 0 80px;
+	font-size: 14px;
+}
+.section-6 .section-six-left .open-eye{
+	width:72px;
+	height: 72px;
+	margin: 0 auto;
+	margin-top: 125px;
+	padding-right: 3px;
+	position: absolute;
+	z-index: 999;
+	left: 180px;
+	opacity: 0.9;
+	overflow: hidden;
+}
+.section-6 .section-six-left .open-eye .public-return{
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+	background: red;
+	opacity: 0.8;
+	position: absolute;
+	top: 560px;
+	left: 1090px;
+	
+}
+.section-6 .section-six-left .open-eye .public-title{
+	color: black;
+	position: absolute;
+	top: -10px;
+	left: 600px;
+	font-size: 20px;
+}
+.section-6 .section-six-left .open-eye p{
+	width: 1000px;
+	padding: 20px 0 20px 0;
+	position: absolute;
+	top: 150px;
+	left: 200px;
+	color: black;
+	display: none;
+}
+.section-6 .section-six-left .open-eye img{
+	text-align: center;
+}
+.section-6 .section--six-right{
+	width: 435px;
+	height: 433px;
+	position: absolute;
+	left: 450px;
+}
+.section-6 .section--six-right .mark{
+	width: 435px;
+	height: 433px;
+	overflow: hidden;
+	position: absolute;
+	background: url(../images/public-mark.png) no-repeat;
+	z-index: 9;
+	top: -15px;
+}
+/*市民活动 end*/
+
+/*书山文海*/
+.section-7 .section-content{
+	overflow: hidden;
+}
+.yScrollList {
+	width: 921px;
+	height: 370px;
+	margin: 25px auto 0;
+}
+.yScrollListTitle {
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	margin-bottom: 40px;
+}
+.yScrollListTitle h1 {
+	cursor: pointer;
+	font-size: 14px;
+	color: whtie;
+	height: 38px;
+	float: left;
+	position: relative;
+	left: -1px;
+	width: 110px;
+	text-align: center;
+	font-weight: normal;
+}
+.yScrollListTitle h1:hover{
+	background: url(../images/book-tile-hover2.png) no-repeat;
+}
+.yScrollListTitle h1.ytitleh12 {
+	left: -2px;
+}
+.yScrollListTitle h1.yth1click {
+	background: url(../images/book-tile-hover.png) no-repeat;
+}
+.yScrollListIn {
+	width: 100%;
+	height: 304px;
+	position: relative;
+}
+.yScrollListInList {
+	display: none;
+	width: 1138px;
+	height: 304px;
+	position: absolute;
+	padding: 0 30px;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.yScrollListInList .yScrollListbtn {
+	cursor: pointer;
+	position: absolute;
+	width: 19px;
+	height: 25px;
+	top: 96px;
+	background: url(../images/btnys.png) no-repeat 0 0;
+}
+.yScrollListInList .yScrollListbtnr {
+	background-position: -21px 0;
+	right: 277px;
+}
+.yScrollListInList .yScrollListbtnl {
+	left: 5px;
+}
+.yScrollListInList ul {
+	width: 2238px;
+	height: 304px;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	overflow: hidden;
+}
+.yScrollListInList ul li {
+	width: 172px;
+	height: 340px;
+	float: left;
+	margin-right: 54px;
+}
+.yScrollListInList ul li img:hover{
+	margin-top: -2px;
+}
+.yScrollListInList ul li img {
+	width: 172px;
+	height: 241px;
+	display: block;
+	margin-left: 10px;
+	margin-top: 12px;
+}
+.yScrollListInList ul li p {
+	text-align: center;
+	font-size: 12px;
+	color: white;
+	line-height: 18px;
+	padding: 7px 10px 0;
+	width: 140px;
+	height: 36px;
+	overflow: hidden;
+}
+/*.yScrollListInList ul li p:hover {
+	color: #e9630a;
+	text-decoration: underline;
+}*/
+.yScrollListInList ul li span {
+	color: #e9630a;
+	font-size: 12px;
+	text-align: center;
+	display: block;
+	line-height: 24px;
+}
+
+/*书山文海 end*/
+
+/*文化长廊*/
+.section-8 .section-content{
+	width: 860px;
+	height: 440px;
+	background: #484a57;
+	opacity: 0.8;
+	left: 440px;
+}
+
+
+/*文化长廊 end*/
+
+/*关注我们*/
+.section-9 .section-content{
+	
+}
+.section-9 .adress{
+	font-size: 14px;
+	width: 240px;
+	padding: 10px 15px;
+	background: #484a57;
+	opacity: 0.7;
+	position: absolute;
+	top: 140px;
+	left: 230px;
+}
+.section-9 .contact-way{
+	width: 240px;
+	height: 290px;
+	background: #484a57;
+	opacity: 0.7;
+	position: absolute;
+	left: 690px;
+	top: 10px;
+}
+.section-9 .contact-way p{
+	margin:10px 15px 0  15px;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+.section-9 .contact-way >a{
+	display: block;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #2C2D3F;
+	background: white;
+	font-size: 14px;
+	margin: 150px 0 0 15px;
+}
+.section-9 .contact-way >a:hover{
+	color: white;
+	background: #bd435a;
+	
+}
+
+
+
+
+
+
+/*关注我们 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section-5 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section-4 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section-3 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
